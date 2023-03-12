@@ -16,7 +16,7 @@ resource "aws_db_instance" "vpc22" {
   storage_type           = "gp2"
   db_subnet_group_name   = aws_db_subnet_group.vpc22.name
   vpc_security_group_ids = [aws_security_group.rds_sg.id]
-  name                   = "vpc22"
+  db_name                = "vpc22"
   username               = "admin"
   password               = "mypassword"
 
