@@ -122,4 +122,11 @@ resource "aws_route_table_association" "private1" {
   subnet_id      = aws_subnet.private1.id
   route_table_id = aws_route_table.private1.id
 }
+
+
+resource "aws_db_instance" "example" {
+  # ...
+  skip_final_snapshot       = true
+  final_snapshot_identifier = "myfinalsnapshot"
+}
   
