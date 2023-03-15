@@ -124,9 +124,6 @@ resource "aws_route_table_association" "private1" {
 }
 
 
-resource "aws_db_instance" "example" {
-  # ...
-  skip_final_snapshot       = true
-  final_snapshot_identifier = "myfinalsnapshot"
-}
+#  IMPORTANT: When executing "terraform destroy" please ensure "skip_final_snapshot" is set to true. This can be found in your terraform state file.
+
   
