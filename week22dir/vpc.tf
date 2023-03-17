@@ -124,6 +124,6 @@ resource "aws_route_table_association" "private1" {
 }
 
 
-#  IMPORTANT: When executing "terraform destroy" please ensure "skip_final_snapshot" is set to true. This can be found in your terraform state file.
+#  IMPORTANT: When executing "terraform destroy" please ensure "skip_final_snapshot" is set to true or have it removed from yoour environmemt altogether
 
   
